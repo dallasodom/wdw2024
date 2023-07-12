@@ -18,7 +18,7 @@ jobs:
           cache: npm
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7
+          ruby-version: 3.0
           bundler-cache: true
       - run: npm install
       - run: npm run prod
