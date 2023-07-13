@@ -1,10 +1,9 @@
 module.exports = {
-  purge: [
+  content: [
     './**/*.html',
     './**/*.md',
     './_assets/**/*.js',
   ],
-  darkMode: 'media', // or 'class' or false
   theme: {
     fontFamily: {
       sans: ['Montserrat', 'sans-serif']
@@ -14,9 +13,6 @@ module.exports = {
         '-1': '-1',
       },
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [
     require('@tailwindcss/typography'),

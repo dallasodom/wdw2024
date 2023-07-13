@@ -5,6 +5,11 @@ baseurl: /wdw2024
 
 date_format: "%b %-d, %Y"
 
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
 exclude:
   - "package*.json"
   - "*.config.js"

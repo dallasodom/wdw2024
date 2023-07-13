@@ -3,10 +3,11 @@ layout: default
 ---
 <article>
   <header>
-    <h1>{{ page.title | escape }}</h1>
+    <a class="text-blue-500 no-underline hover:underline hover:text-blue-700 visited:text-purple-600" href="{{ "/" | relative_url }}"><-- Back to Home</a>
+    <h1>{{ page.title | escape }}</h1>    
   </header>
 
-  <div class="prose prose-sm lg:prose-lg xl:prose-xl">
+  <div class="prose prose-sm lg:prose-lg xl:prose-xl max-w-none">
     {{ content }}
   </div>
 </article>
