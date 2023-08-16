@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 #countdownPara {
-  
   text-align: center;
   font-size: 60px;
   margin-top: 0px;
@@ -11,4 +10,24 @@
 
 body {
   background-color: lavender;
+}
+
+li.checkmarkListItem {
+  margin: 0;
+	padding: 4px 0 4px 36px;
+	list-style: none;
+	background-image: url("../../images/accept.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 24px;
+}
+
+li.failedListItem {
+  margin: 0;
+	padding: 4px 0 4px 36px;
+	list-style: none;
+	background-image: url("../../images/failed.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 24px;
 }
