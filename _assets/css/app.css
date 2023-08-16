@@ -16,7 +16,7 @@ li.checkmarkListItem {
   margin: 0;
 	padding: 4px 0 4px 36px;
 	list-style: none;
-	background-image: url("../images/accept.png");
+	background-image: url("../../images/accept.png");
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 24px;
@@ -26,7 +26,7 @@ li.failedListItem {
   margin: 0;
 	padding: 4px 0 4px 36px;
 	list-style: none;
-	background-image: url("../images/failed.png");
+	background-image: url("../../images/failed.png");
 	background-repeat: no-repeat;
 	background-position: left center;
 	background-size: 24px;
