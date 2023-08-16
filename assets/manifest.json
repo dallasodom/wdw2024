@@ -1,4 +1,6 @@
 {
   "assets/js/app.js": "/assets/js/app.js",
-  "assets/css/app.css": "/assets/css/app.css"
+  "assets/css/app.css": "/assets/css/app.css",
+  "assets/images/accept.png": "/assets/images/accept.af2a744f.png",
+  "assets/images/failed.png": "/assets/images/failed.47b044f7.png"
 }
