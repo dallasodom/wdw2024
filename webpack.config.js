@@ -5,10 +5,10 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 }
 
 process.env.NODE_ENV = Encore.isProduction() ? 'production' : 'dev';
-
+console.log(Encore.isProduction());
 Encore
   .setOutputPath('assets/')
-  .setPublicPath('/assets')
+  .setPublicPath(Encore.isProduction() ? '/wdw2024' : '/')
   .addStyleEntry('css/app', './_assets/css/app.css')
   .addEntry('js/app', './_assets/js/app.js')
   .enablePostCssLoader()
