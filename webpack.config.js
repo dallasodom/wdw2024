@@ -5,10 +5,29 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 }
 
 process.env.NODE_ENV = Encore.isProduction() ? 'production' : 'dev';
-console.log(Encore.isProduction());
+
 Encore
   .setOutputPath('assets/')
-  .setPublicPath(Encore.isProduction() ? '/wdw2024' : '/')
+  .setPublicPath(Encore.isProduction() ? '/wdw2024/assets' : '/assets')
+      // this is your *true* public path
+  //.setPublicPath('/assets')
+
+  // this is now needed so that your manifest.json keys are still `assets/foo.js`
+  // (which is a file that's used by Symfony's `asset()` function)
+  .setManifestKeyPrefix('assets')
+
+  .copyFiles({
+    from: './_assets/images',
+
+    // optional target path, relative to the output dir
+    to: 'images/[path][name].[hash:8].[ext]',
+
+    // if versioning is enabled, add the file hash too
+    //to: 'images/[path][name].[hash:8].[ext]',
+
+    // only copy files matching this pattern
+    //pattern: /\.(png|jpg|jpeg)$/
+  })
   .addStyleEntry('css/app', './_assets/css/app.css')
   .addEntry('js/app', './_assets/js/app.js')
   .enablePostCssLoader()
