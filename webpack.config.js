@@ -8,9 +8,8 @@ process.env.NODE_ENV = Encore.isProduction() ? 'production' : 'dev';
 
 Encore
   .setOutputPath('assets/')
+  // this is your *true* public path
   .setPublicPath(Encore.isProduction() ? '/wdw2024/assets' : '/assets')
-      // this is your *true* public path
-  //.setPublicPath('/assets')
 
   // this is now needed so that your manifest.json keys are still `assets/foo.js`
   // (which is a file that's used by Symfony's `asset()` function)
