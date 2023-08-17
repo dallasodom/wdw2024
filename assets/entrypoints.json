@@ -2,12 +2,12 @@
   "entrypoints": {
     "js/app": {
       "js": [
-        "/wdw2024/js/app.js"
+        "/wdw2024/assets/js/app.js"
       ]
     },
     "css/app": {
       "css": [
-        "/wdw2024/css/app.css"
+        "/wdw2024/assets/css/app.css"
       ]
     }
   }
