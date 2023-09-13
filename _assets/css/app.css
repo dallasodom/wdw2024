@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#countdownPara {
-  text-align: center;
-  font-size: 60px;
-  margin-top: 0px;
-}
-
 body {
   background-color: lavender;
 }
