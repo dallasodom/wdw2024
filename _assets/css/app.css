@@ -22,3 +22,28 @@ li.listImage {
 	//background-position: left center;
 	background-size: 24px;
   }
+
+table {
+	border: solid;
+}
+
+th, td {
+	border: 1px solid;
+	padding: 5px;
+}
+
+.tomatoCell {
+	background-color: Tomato;
+}
+
+.tomatoCellPale { 
+	background-color: color-mix(in srgb, Tomato, transparent 70%);
+}
+
+.limeGreenCell {
+	background-color: LimeGreen;
+}
+
+.limeGreenCellPale {
+	background-color: color-mix(in srgb, LimeGreen, transparent 70%);
+}
